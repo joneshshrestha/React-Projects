@@ -14,14 +14,16 @@ const secondBook = {
   img: 'https://images-na.ssl-images-amazon.com/images/I/71yNgTMEcpL._AC_UL600_SR600,400_.jpg',
 }
 
+const names = ['Jonesh', 'Sakshi', 'Jena']
+
+const newNames = names.map((name) => {
+  return <h1>{name}</h1>
+})
+
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book
-        author={firstBook.author}
-        title={firstBook.title}
-        img={firstBook.img}
-      >
+      <Book author={newNames} title={firstBook.title} img={firstBook.img}>
         <p>hello world this is a children prop which is passed</p>
       </Book>
       <Book
