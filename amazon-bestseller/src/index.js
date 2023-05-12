@@ -1,3 +1,5 @@
+//@ts-check
+
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
@@ -21,16 +23,14 @@ const BookList = () => {
   return (
     <section className="booklist">
       {books.map((book) => {
-        console.log(book)
-        return <Book book={book} />
+        return <Book {...book} />
       })}
     </section>
   )
 }
 
 const Book = (props) => {
-  console.log(props)
-  const { img, author, title } = props.book
+  const { img, author, title } = props
   console.log(props)
   return (
     <article className="book">
