@@ -39,9 +39,13 @@ const EventExamples = () => {
     alert('handle button click')
   }
 
+  const handleFormSubmission = (e) => {
+    e.preventDefault()
+    console.log('Form Submitted')
+  }
   return (
     <section>
-      <form>
+      <form onSubmit={handleFormSubmission}>
         <h2>Typical Form</h2>
         <input
           type="text"
