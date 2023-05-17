@@ -50,11 +50,16 @@ const EventExamples = () => {
         <input
           type="text"
           name="example"
-          onChange={handleFormInput}
+          onChange={(e) => {
+            console.log(e.target.value)
+          }}
           style={{ margin: '1rem 0' }}
         />
+        <button type="submit" onClick={handleFormSubmission}>
+          Submit Form
+        </button>
       </form>
-      <button onClick={handleButtonClick}>Click Me!</button>
+      <button onClick={() => console.log('hello world!')}>Click Me!</button>
     </section>
   )
 }
