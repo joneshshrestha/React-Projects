@@ -13,11 +13,14 @@ const BookList = () => {
   }
 
   return (
-    <section className="booklist">
-      {books.map((book) => {
-        return <Book {...book} key={book.id} getBook={getBook} />
-      })}
-    </section>
+    <>
+      <h1>Best Sellers in Books</h1>
+      <section className="booklist">
+        {books.map((book, index) => {
+          return <Book {...book} getBook={getBook} index={index + 1} />
+        })}
+      </section>
+    </>
   )
 }
 
