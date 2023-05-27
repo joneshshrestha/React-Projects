@@ -3,14 +3,14 @@ import Title from './Title'
 
 function about() {
   return (
-    <section className="section" id="about">
-      <Title title="about" subTitle="us"></Title>
+    <section className='section' id='about'>
+      <Title title='about' subTitle='us'></Title>
 
-      <div className="section-center about-center">
-        <div className="about-img">
-          <img src={aboutImg} className="about-photo" alt="awesome beach" />
+      <div className='section-center about-center'>
+        <div className='about-img'>
+          <img src={aboutImg} className='about-photo' alt='awesome beach' />
         </div>
-        <article className="about-info">
+        <article className='about-info'>
           <h3>explore the difference</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur
@@ -22,7 +22,7 @@ function about() {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="#" className="btn">
+          <a href='#about' className='btn'>
             read more
           </a>
         </article>
