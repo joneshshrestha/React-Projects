@@ -27,7 +27,7 @@ const Tours = () => {
                       <i className='fas fa-map'></i>
                     </span>{' '}
                     {location}
-                  </p>
+                  </p>{' '}
                   <p>{duration}</p>
                   <p>{cost}</p>
                 </div>
